@@ -505,7 +505,7 @@ def parse_args():
     parser.add_argument('--version', action='version', version=VERSION)
     return parser.parse_args()
 
-def isconnected(host='1.1.1.1', port=80, timeout=1):
+def isconnected(host='api.store.remarkable.com', port=80, timeout=5):
     # timeout is expressed in seconds
     try:
         s = socket.create_connection((host, port), timeout)
